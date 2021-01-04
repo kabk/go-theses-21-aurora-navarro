@@ -42,6 +42,19 @@ ellipse{
   justify-content: left;
 }
 
+.subtitle {
+  font-family: "Syne";
+  /* font-variation-settings: 'wght' 600; */
+  /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
+  font-weight: 600;
+  font-size: 4vw;
+  line-height: 4vw;
+  height: auto;
+  width: 100%;
+  color: black;
+  justify-content: left;
+}
+
 .bodytxt {
   font-family: "Syne";
   /* font-variation-settings: 'wght' 600; */
