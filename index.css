@@ -6,8 +6,8 @@ background: #fff;
 
 * {
     margin: 0;
-    /* box-sizing: border-box; */
-    /* overflow-x: hidden; */
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .mess{
@@ -32,23 +32,27 @@ ellipse{
 }
 
 
-.text {
-  /* font-family: "Syne"; */
-  /* font-family: "NeueWorld-Condensed"; */
-  font-family: "Syne";
-  font-weight: 400;
+.title {
+  font-family: "NeueWorld-Condensed";
+  font-size: 6vw;
+  line-height: 6vw;
   height: auto;
   width: 100%;
-  /* font-style: normal; */
-  /* font-weight: normal; */
   color: black;
-  font-size: 16vw;
-  line-height: 14vw;
   justify-content: left;
-  /* mix-blend-mode: lighten; */
-  /* mix-blend-mode: difference; */
-/* filter: difference; */
-  /* filter: invert(100%); */
+}
+
+.bodytxt {
+  font-family: "Syne";
+  /* font-variation-settings: 'wght' 600; */
+  /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2vw;
+  height: auto;
+  width: 100%;
+  color: black;
+  justify-content: left;
 }
 
 /* .spot{
