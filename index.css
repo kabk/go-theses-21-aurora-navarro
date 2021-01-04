@@ -34,7 +34,9 @@ ellipse{
 
 .text {
   /* font-family: "Syne"; */
-  font-family: "NeueWorld-Condensed";
+  /* font-family: "NeueWorld-Condensed"; */
+  font-family: "Syne";
+  font-weight: 400;
   height: auto;
   width: 100%;
   /* font-style: normal; */
