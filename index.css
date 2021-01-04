@@ -37,8 +37,8 @@ ellipse{
   font-family: "NeueWorld-Condensed";
   height: auto;
   width: 100%;
-  font-style: normal;
-  font-weight: normal;
+  /* font-style: normal; */
+  /* font-weight: normal; */
   color: black;
   font-size: 16vw;
   line-height: 14vw;
