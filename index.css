@@ -2,53 +2,159 @@ html,
 body {
 padding: 0;
 background: #fff;
+overflow-x: hidden;
+
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+
 }
 
-.mess{
-  /* filter: invert(100%); */
+@font-face {
+  font-family: "NeueWorld-CondensedRegular";
+  src: url("./Fonts/NeueWorld-CondensedRegular.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "Syne";
+  src: url("./Fonts/Syne-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: "Gloubiv_0.2-Black";
+  src: url("./Fonts/Gloubiv_0.2-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gloubiv_0.2-Hairline";
+  src: url("./Fonts/Gloubiv_0.2-Hairline.otf") format("opentype");
+}
+
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+@media screen and (max-width:500px) {
 
 svg{
-    position:absolute;
-    height:100px;
-    width:100px;
-    left: 100px;
-    top: 100px;
+    /* position:absolute; */
+    position: fixed;
+    /* position: sticky; */
+    /* overflow-x:hidden; */
+    /* display: absolute; */
+    /* height:100vw;
+    width:100vh; */
+    height:600px;
+    width:600px;
+    width:100vw;
+    height:100vh;
+    /* left: 100px;
+    top: 100px; */
+    transform: translate(-100px, -100px);
+
     z-index: 1;
     /* filter: invert(100%); */
     mix-blend-mode: lighten;
-  /* filter: difference;
+    /* mix-blend-mode: darken; */
+  /* filter: difference; */
+
+  /* ----- for OVERLAY with type, filter difference, for TYPE MASKING GRADIENT (GRADIENT APPEARS BEHIND) turn off z-index and use mixblendmode:lighten */
 }
 
 
-ellipse{
-  /* filter: invert(100%); */
+.thesis{
+  /* padding-left:4vw; */
+  /* padding-right:4vw; */
+  /* padding-top: 4vh; */
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  /* background-color: beige; */
+  /* z-index: 1; */
+
+}
+
+.landing {
+  /* margin-top: 25vh; */
+  /* margin-left:4vw; */
+  /* margin-right:4vw; */
+  /* background-color: black; */
+  padding-top:25vh;
+  width: 100vw;
+  height: 100vh;
+  font-family: "NeueWorld-CondensedRegular";
+  /* font-family: "Gloubiv_0.2-Black"; */
+  font-size: 20vw;
+  line-height: 19vw;
+  /* color: rgb(255,255,255); */
+  text-align: center;
+}
+
+.toc {
+  /* margin-top: 25vh; */
+  /* margin-left:4vw; */
+  /* margin-right:4vw; */
+  /* background-color: black; */
+  background-color: whitesmoke;
+  /* padding-top: 15vh; */
+  /* padding-left: 5vw;
+  padding-right: 5vw; */
+  width: 100vw;
+  height: 100vh;
+  /* font-family: "NeueWorld-CondensedRegular"; */
+  font-family: "Syne";
+  /* font-weight: 800; */
+  /* font-family: "Gloubiv_0.2-Black"; */
+  font-size: 6vw;
+  line-height: 6vw;
+  /* color: rgb(255,255,255); */
+  text-align: center;
+}
+
+.ch {
+  /* margin-top: 25vh; */
+  /* margin-left:4vw; */
+  /* margin-right:4vw; */
+  /* background-color: black; */
+  /* background-color: pink; */
+  padding-top: 6vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  width: 100vw;
+  height: auto;
+  /* font-family: "NeueWorld-CondensedRegular"; */
+  /* font-family: "Syne"; */
+  /* font-weight: 800; */
+  /* font-family: "Gloubiv_0.2-Black"; */
+  /* font-size: 6vw;
+  line-height: 6vw; */
+  /* color: rgb(255,255,255); */
+  /* text-align: center; */
 }
 
 
 .title {
   font-family: "NeueWorld-CondensedRegular";
-  font-size: 6vw;
-  line-height: 6vw;
+  font-size: 12vw;
+  line-height: 12vw;
   height: auto;
   width: 100%;
   color: black;
-  justify-content: left;
+  text-align: center;
 }
 
-.subtitle {
+h2 {
   font-family: "Syne";
   /* font-variation-settings: 'wght' 600; */
   /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
   font-weight: 600;
-  font-size: 10vw;
-  line-height: 10vw;
+  font-size: 6vw;
+  line-height: 8vw;
   height: auto;
   width: 100%;
   color: black;
@@ -60,22 +166,171 @@ ellipse{
   /* font-variation-settings: 'wght' 600; */
   /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
   font-weight: 400;
+  font-size: 4vw;
+  line-height: 4vw;
+  height: auto;
+  width: 100%;
+  padding-left:4vw;
+  padding-right:4vw;
+  color: black;
+  justify-content: left;
+}
+
+#questions {
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+
+#abstract {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+}
+
+@media screen and (min-width:501px) {
+
+
+  svg{
+      /* position:absolute; */
+      position: fixed;
+      /* position: sticky; */
+      /* overflow-x:hidden; */
+      /* display: absolute; */
+      /* height:100vw;
+      width:100vh; */
+      height:600px;
+      width:600px;
+      transform: translate(-100px, -100px);
+      z-index: 1;
+      /* filter: invert(100%); */
+      mix-blend-mode: lighten;
+      /* mix-blend-mode: darken; */
+    /* filter: difference; */
+
+    /* ----- for OVERLAY with type, filter difference, for TYPE MASKING GRADIENT (GRADIENT APPEARS BEHIND) turn off z-index and use mixblendmode:lighten */
+  }
+
+
+
+.thesis{
+  /* padding-top: 10vh; */
+  /* background-color: grey; */
+}
+
+.landing {
+  /* margin-top: 25vh; */
+  padding-top: 25vh;
+  /* margin-left:4vw; */
+  /* margin-right:4vw; */
+  /* background-color: black; */
+  width: 100vw;
+  height: 100vh;
+  font-family: "NeueWorld-CondensedRegular";
   font-size: 10vw;
-  line-height: 10vw;
+  line-height: 9vw;
+  /* color: rgb(255,255,255); */
+  text-align: center;
+  /* background-color: olive; */
+}
+
+.toc {
+  /* margin-top: 25vh; */
+  /* margin-left:4vw; */
+  /* margin-right:4vw; */
+  /* background-color: black; */
+  background-color: whitesmoke;
+  padding-top: 15vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  width: 100vw;
+  height: 100vh;
+  /* font-family: "NeueWorld-CondensedRegular"; */
+  font-family: "Syne";
+  /* font-weight: 800; */
+  /* font-family: "Gloubiv_0.2-Black"; */
+  font-size: 2vw;
+  line-height: 2vw;
+  /* color: rgb(255,255,255); */
+  text-align: center;
+
+}
+
+.ch {
+/* padding-top: 6vh; */
+padding-left: 2vw;
+padding-right: 2vw;
+width:30vw;
+height: auto;
+float:left;
+}
+
+/* #ch1{
+
+}
+#ch2{
+  width:30vw;
+  height: auto;
+  float:left;
+}
+#ch3{
+  width:30vw;
+  height: auto;
+  float:left;
+} */
+
+.title {
+  font-family: "NeueWorld-CondensedRegular";
+  font-size: 6vw;
+  line-height: 6vw;
+  height: auto;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Syne";
+  /* font-variation-settings: 'wght' 600; */
+  /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
+  font-weight: 600;
+  font-size: 2vw;
+  line-height: 2vw;
   height: auto;
   width: 100%;
   color: black;
   justify-content: left;
 }
 
-/* .spot{
-  position:absolute;
-  height:300px;
-  width:300px;
-  left: 500px;
-  top: 100px;
-  z-index: 1;
-  /* mix-blend-mode: color-dodge; */
-  /* filter: invert(100%); */
-  /* filter: difference; */
-/* } */
+.bodytxt {
+  font-family: "Syne";
+  /* font-variation-settings: 'wght' 600; */
+  /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
+  font-weight: 400;
+  font-size: 1.6vw;
+  line-height: 2vw;
+  height: auto;
+  width: 100%;
+  color: black;
+  justify-content: left;
+}
+
+#questions {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 15vw;
+  padding-right: 20vw;
+  width: 100vw;
+  height: auto;
+}
+
+#abstract {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 25vw;
+  padding-right: 20vw;
+  width:100vw;
+  height: auto;
+}
+
+}
