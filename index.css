@@ -49,10 +49,10 @@ svg{
     /* display: absolute; */
     /* height:100vw;
     width:100vh; */
-    height:600px;
-    width:600px;
-    width:100vw;
-    height:100vh;
+    /* height:600px; */
+    /* width:600px; */
+    width:200vw;
+    height:200vh;
     /* left: 100px;
     top: 100px; */
     transform: translate(-100px, -100px);
@@ -80,19 +80,38 @@ svg{
 }
 
 .landing {
-  /* margin-top: 25vh; */
+  /* margin-top: 15vh; */
   /* margin-left:4vw; */
   /* margin-right:4vw; */
   /* background-color: black; */
-  padding-top:25vh;
+  padding-top:10vh;
   width: 100vw;
   height: 100vh;
-  font-family: "NeueWorld-CondensedRegular";
+  /* font-family: "NeueWorld-CondensedRegular"; */
+  font-family: "Syne";
   /* font-family: "Gloubiv_0.2-Black"; */
-  font-size: 20vw;
-  line-height: 19vw;
+  font-size: 16vw;
+  line-height: 17vw;
   /* color: rgb(255,255,255); */
-  text-align: center;
+  /* text-align: center; */
+  text-align: left;
+  /* IF ALIGN LEFT THEN: */
+  padding-left: 4vw;
+}
+
+.landing:hover{
+  padding-top: 10vh;
+  font-weight: 800;
+  word-wrap: break-word;
+  /* word-break: break-all; */
+  font-size: 16vw;
+  line-height: 16vw;
+  /* font-size: 9.5vw; */
+  color: rgb(255,0,255);
+  background-color: black;
+  transition: 0.3s ease;
+  /* writing-mode: vertical-rl;
+  text-orientation: mixed; */
 }
 
 .toc {
@@ -172,6 +191,7 @@ h2 {
   width: 100%;
   padding-left:4vw;
   padding-right:4vw;
+  padding-top: 4vh;
   color: black;
   justify-content: left;
 }
@@ -201,15 +221,30 @@ h2 {
       width:100vh; */
       height:600px;
       width:600px;
-      transform: translate(-100px, -100px);
+      transform: translate(-200px, -200px);
       z-index: 1;
       /* filter: invert(100%); */
       mix-blend-mode: lighten;
       /* mix-blend-mode: darken; */
     /* filter: difference; */
 
+/* ANIMATION: fade is the name, 7 = duration, ease is style, 2s is delay, normal is direction, forwards is fill mode*/
+    /* animation: fade 7s ease 2s infinite normal forwards; */
+
     /* ----- for OVERLAY with type, filter difference, for TYPE MASKING GRADIENT (GRADIENT APPEARS BEHIND) turn off z-index and use mixblendmode:lighten */
+
   }
+
+  @-webkit-keyframes fade {
+  from {opacity: 100;}
+  to {opacity: 0;}
+  }
+
+@keyframes fade {
+from {opacity: 100;}
+to {opacity: 0;}
+}
+
 
 
 
@@ -219,19 +254,49 @@ h2 {
 }
 
 .landing {
-  /* margin-top: 25vh; */
-  padding-top: 25vh;
-  /* margin-left:4vw; */
-  /* margin-right:4vw; */
-  /* background-color: black; */
+  padding-top: 30vh;
   width: 100vw;
   height: 100vh;
-  font-family: "NeueWorld-CondensedRegular";
-  font-size: 10vw;
-  line-height: 9vw;
+  font-family: "Syne";
+  font-weight: 400;
+  font-size: 8vw;
+  line-height: 7vw;
   /* color: rgb(255,255,255); */
   text-align: center;
   /* background-color: olive; */
+}
+
+.landing:hover {
+  padding-top: 20vh;
+}
+
+/* .landing:hover{
+  padding-top: 20vh;
+  font-weight: 800;
+  word-wrap: break-word;
+  font-size: 7vw;
+  line-height: 7vw;
+  color: rgb(255,0,255);
+  background-color: black;
+  transition: 0.3s ease;
+} */
+
+.landingtext {
+  /* top: 25vh; */
+  width: auto;
+  height: auto;
+  background-color: olive;
+}
+
+.landingtext:hover{
+  padding-top: 0;
+  font-weight: 800;
+  word-wrap: break-word;
+  font-size: 7vw;
+  line-height: 7vw;
+  color: rgb(255,0,255);
+  background-color: black;
+  transition: 0.3s ease;
 }
 
 .toc {
