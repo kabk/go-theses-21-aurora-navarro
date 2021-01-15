@@ -55,7 +55,7 @@ svg{
     height:600vh;
     /* left: 100px;
     top: 100px; */
-    transform: translate(-200px, -200px);
+    transform: translate(-300px, -300px);
 
     z-index: 1;
     /* filter: invert(100%); */
@@ -221,7 +221,7 @@ h2 {
       width:100vh; */
       height:600px;
       width:600px;
-      transform: translate(-200px, -200px);
+      transform: translate(-300px, -300px);
       z-index: 1;
       /* filter: invert(100%); */
       mix-blend-mode: lighten;
