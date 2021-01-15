@@ -13,10 +13,6 @@ overflow-x: hidden;
 
 }
 
-@font-face {
-  font-family: "NeueWorld-CondensedRegular";
-  src: url("./Fonts/NeueWorld-CondensedRegular.otf") format("opentype");
-}
 
 @font-face {
   font-family: "Syne";
@@ -25,13 +21,8 @@ overflow-x: hidden;
 }
 
 @font-face {
-  font-family: "Gloubiv_0.2-Black";
-  src: url("./Fonts/Gloubiv_0.2-Black.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Gloubiv_0.2-Hairline";
-  src: url("./Fonts/Gloubiv_0.2-Hairline.otf") format("opentype");
+  font-family: "Syne Tactile";
+  src: url("./Fonts/SyneTactile-Regular.otf") format("opentype");
 }
 
 .wrapper {
@@ -155,7 +146,7 @@ svg{
 }
 
 
-.title {
+/* .title {
   font-family: "NeueWorld-CondensedRegular";
   font-size: 12vw;
   line-height: 12vw;
@@ -163,6 +154,19 @@ svg{
   width: 100%;
   color: black;
   text-align: center;
+} */
+
+h1 {
+  font-family: "Syne";
+  /* font-variation-settings: 'wght' 600; */
+  /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
+  font-weight: 800;
+  font-size: 7vw;
+  line-height: 7vw;
+  height: auto;
+  width: 100%;
+  color: black;
+  justify-content: left;
 }
 
 h2 {
@@ -178,13 +182,22 @@ h2 {
   justify-content: left;
 }
 
+h3 {
+  font-family: "Syne Tactile";
+  /* font-style: italic; */
+  font-weight: normal;
+  font-size: 5vw;
+  line-height: 7vw;
+  padding-left: 10vw;
+}
+
 .bodytxt {
   font-family: "Syne";
   /* font-variation-settings: 'wght' 600; */
   /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
   font-weight: 400;
   font-size: 4vw;
-  line-height: 4vw;
+  line-height: 6vw;
   height: auto;
   width: 100%;
   padding-left:4vw;
@@ -328,20 +341,6 @@ height: auto;
 float:left;
 }
 
-/* #ch1{
-
-}
-#ch2{
-  width:30vw;
-  height: auto;
-  float:left;
-}
-#ch3{
-  width:30vw;
-  height: auto;
-  float:left;
-} */
-
 .title {
   font-family: "NeueWorld-CondensedRegular";
   font-size: 6vw;
@@ -350,6 +349,19 @@ float:left;
   width: 100%;
   color: black;
   text-align: center;
+}
+
+h1 {
+  font-family: "Syne";
+  /* font-variation-settings: 'wght' 600; */
+  /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
+  font-weight: 800;
+  font-size: 2.5vw;
+  line-height: 2.5vw;
+  height: auto;
+  width: 100%;
+  color: black;
+  justify-content: left;
 }
 
 h2 {
@@ -365,17 +377,28 @@ h2 {
   justify-content: left;
 }
 
+h3 {
+  font-family: "Syne Tactile";
+  /* font-style: italic; */
+  font-weight: normal;
+  font-size: 1.8vw;
+  line-height: 2.2vw;
+  padding-left: 10vw;
+}
+
 .bodytxt {
+  padding: 4vw;
+  height: auto;
+  width: 100%;
+  justify-content: left;
   font-family: "Syne";
   /* font-variation-settings: 'wght' 600; */
   /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
   font-weight: 400;
   font-size: 1.6vw;
   line-height: 2vw;
-  height: auto;
-  width: 100%;
   color: black;
-  justify-content: left;
+
 }
 
 #questions {
