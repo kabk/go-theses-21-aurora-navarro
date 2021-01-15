@@ -51,10 +51,8 @@ svg{
     width:100vh; */
     /* height:600px; */
     /* width:600px; */
-    width:600vw;
-    height:600vh;
-    /* left: 100px;
-    top: 100px; */
+    height:600px;
+    width:600px;
     transform: translate(-300px, -300px);
 
     z-index: 1;
@@ -80,38 +78,38 @@ svg{
 }
 
 .landing {
-  /* margin-top: 15vh; */
-  /* margin-left:4vw; */
-  /* margin-right:4vw; */
-  /* background-color: black; */
-  padding-top:10vh;
   width: 100vw;
   height: 100vh;
-  /* font-family: "NeueWorld-CondensedRegular"; */
+  padding-top:10vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
   font-family: "Syne";
-  /* font-family: "Gloubiv_0.2-Black"; */
   font-size: 16vw;
   line-height: 17vw;
-  /* color: rgb(255,255,255); */
-  /* text-align: center; */
   text-align: left;
-  /* IF ALIGN LEFT THEN: */
-  padding-left: 4vw;
+
 }
 
 .landing:hover{
   padding-top: 10vh;
+}
+
+.landingtext {
+  /* top: 25vh; */
+  width: auto;
+  height: auto;
+  /* background-color: olive; */
+}
+
+.landingtext:hover{
+  padding-top: 0;
   font-weight: 800;
   word-wrap: break-word;
-  /* word-break: break-all; */
   font-size: 16vw;
   line-height: 16vw;
-  /* font-size: 9.5vw; */
   color: rgb(255,0,255);
-  background-color: black;
+  /* background-color: black; */
   transition: 0.3s ease;
-  /* writing-mode: vertical-rl;
-  text-orientation: mixed; */
 }
 
 .toc {
@@ -285,7 +283,7 @@ to {opacity: 0;}
   /* top: 25vh; */
   width: auto;
   height: auto;
-  background-color: olive;
+  /* background-color: olive; */
 }
 
 .landingtext:hover{
@@ -295,7 +293,7 @@ to {opacity: 0;}
   font-size: 7vw;
   line-height: 7vw;
   color: rgb(255,0,255);
-  background-color: black;
+  /* background-color: black; */
   transition: 0.3s ease;
 }
 
