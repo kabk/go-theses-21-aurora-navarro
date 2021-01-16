@@ -21,27 +21,30 @@ touch.style.display = '';
 touch.style.position = 'absolute';
 touch.style.left = x + 'px';
 touch.style.top = y + 'px';
+}
 
+// Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-// var elem = document.getElementsById("spot2")[0];
-// var clone = elmnt.cloneNode(true);
-// document.body.appendChild(cln);
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-// let spot2 = document.getElementById("spot2")
-// let spotclone = spot2.cloneNode(true)
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-// touch.style.left = xPosition + 'px';
-// touch.style.top = yPosition + 'px';
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-
-// touch.style.left = xPosition;
-// touch.style.top = yPosition;
-
-// touch.style.top = offset;
-// if (touch.style.display === "none") {
-//   touch.style.display = "absolute";
-// } else {
-//   touch.style.display = "none";
-// }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
