@@ -4,6 +4,7 @@ body {
   background: #fff;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  /* pointer-events: none; */
 }
 
 * {
@@ -111,9 +112,9 @@ a::after {}
 }
 
   #myBtn {
-    color: white;
+    color: rgb(255,0,255);
     z-index: 1;
-    top: 90vh;
+    top: 88vh;
     left: 80vw;
     position: fixed;
     border-radius: 50%;
