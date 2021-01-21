@@ -347,12 +347,17 @@ h2 {
 }
 
 h3 {
-  font-family: "Syne Tactile";
+  /* font-family: "Syne Tactile"; */
+  font-family: "Royal New Light";
   /* font-style: italic; */
   font-weight: normal;
-  font-size: 5vw;
+  font-size: 4.5vw;
   line-height: 7vw;
   padding-left: 10vw;
+}
+
+.postimg {
+  border-radius: 5%;
 }
 
 .footnote {
