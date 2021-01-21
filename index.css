@@ -51,7 +51,7 @@ a::after {}
 
 
 
-
+/* MOBILE */
 @media screen and (max-width:500px) {
 
   /* The Modal (background) */
@@ -72,14 +72,14 @@ a::after {}
   .modal-content {
     background-color: whitesmoke;
     margin: 10% auto; /* 15% from the top and centered */
-    padding-top: 7vh;
-    padding-bottom: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
     padding-left: 2vw;
     padding-right: 2vw;
     /* padding: 20px; */
     border: none;
     /* border: 1px solid #888; */
-    width: 45%; /* Could be more or less, depending on screen size */
+    width: 75vw; /* Could be more or less, depending on screen size */
   }
 
   /* The Close Button */
@@ -88,11 +88,11 @@ a::after {}
     color: rgb(255,0,255);
     float: right;
     /* font-size: 28px; */
-    font-size: 1.5vw;
+    font-size: 5vw;
     font-weight: bold;
     position: absolute;
     text-align: right;
-    width: 42vw;
+    width: 70vw;
     /* top: 0vh;
     left: 0vw; */
   }
@@ -113,8 +113,8 @@ a::after {}
   color: black;
   /* font-size: 14px;
   line-height: 15px; */
-  font-size: 1.1vw;
-  line-height: 1.1vw;
+  font-size: 4.5vw;
+  line-height: 5vw;
   justify-content: left;
   padding-bottom: 4vh;
   padding-left: 1vw;
@@ -124,19 +124,20 @@ a::after {}
   #myBtn {
     color: rgb(255,0,255);
     z-index: 1;
-    top: 88vh;
+    top: 86vh;
     left: 80vw;
     position: fixed;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* background-color: black; */
     background: none;
+    border: none;
     padding-top: 2vh;
     padding-bottom: 2vh;
     padding-left: 4vw;
     padding-right: 4.5vw;
     font-family: "Syne";
     /* font-size: 40px; */
-    font-size: 6vw;
+    font-size: 8vw;
     font-style: normal;
     transform: rotate(-90deg);
   }
@@ -159,6 +160,7 @@ a::after {}
     /* mix-blend-mode: darken; */
     /* filter: difference; */
     /* ----- for OVERLAY with type, filter difference, for TYPE MASKING GRADIENT (GRADIENT APPEARS BEHIND) turn off z-index and use mixblendmode:lighten */
+    pointer-events: none;
   }
 
 
@@ -181,14 +183,14 @@ a::after {}
   .landing {
     width: 100vw;
     height: 75vh;
-    padding-top: 10vh;
+    padding-top: 3vh;
     padding-left: 4vw;
     padding-right: 3vw;
     background: black
   }
 
   .landing:hover {
-    padding-top: 10vh;
+    padding-top: 3vh;
   }
 
   .landingtext {
@@ -238,11 +240,12 @@ a::after {}
   height: 25vh;
   background: black;
   text-align: center;
-  font-family: "Royal New Light";
+  /* font-family: "Royal New Light"; */
+  font-family: "Syne Tactile";
   font-style: normal;
   color: white;
-  font-size: 4vw;
-  line-height: 4.5vw;
+  font-size: 5vw;
+  line-height: 5.5vw;
   /* mix-blend-mode: exclusion; */
 }
 
@@ -347,8 +350,8 @@ h2 {
 }
 
 h3 {
-  /* font-family: "Syne Tactile"; */
-  font-family: "Royal New Light";
+  font-family: "Syne Tactile";
+  /* font-family: "Royal New Light"; */
   /* font-style: italic; */
   font-weight: normal;
   font-size: 4.5vw;
@@ -365,19 +368,13 @@ h3 {
   font-family: "Syne Tactile";
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 3.5vw;
   line-height: 4vw;
-  color: white;
+  color: rgb(255, 0, 255);
 }
 
 .footnote:hover {
-  color: rgb(255, 0, 255);
-}
 
-.footnote_spot {
-  display: inline;
-  font-size: 8vw;
-  color: rgb(255, 0, 255);
 }
 
 .bodytxt-wrap {
@@ -415,6 +412,7 @@ h3 {
 }
 }
 
+/* DESKTOP */
 @media screen and (min-width:501px) {
 
   /* The Modal (background) */
@@ -485,21 +483,22 @@ h3 {
 }
 
   #myBtn {
-    color: white;
+    color: rgb(255,0,255);
     z-index: 1;
-    top: 80vh;
+    top: 86vh;
     left: 90vw;
     position: fixed;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* background-color: black; */
     background: none;
+      border: none;
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-left: 1vw;
     padding-right: 1vw;
     font-family: "Syne";
     /* font-size: 40px; */
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-style: normal;
     transform: rotate(-90deg);
   }
@@ -517,6 +516,8 @@ h3 {
     /* ANIMATION: fade is the name, 7 = duration, ease is style, 2s is delay, normal is direction, forwards is fill mode*/
     /* animation: fade 7s ease 2s infinite normal forwards; */
     /* ----- for OVERLAY with type, filter difference, for TYPE MASKING GRADIENT (GRADIENT APPEARS BEHIND) turn off z-index and use mixblendmode:lighten */
+    pointer-events: none;
+
   }
 
   @-webkit-keyframes fade {
@@ -666,33 +667,55 @@ h3 {
 }
 
 .toc {
-  /* margin-top: 25vh; */
-  /* margin-left:4vw; */
-  /* margin-right:4vw; */
-  /* background-color: black; */
+
   background-color: whitesmoke;
-  padding-top: 15vh;
+  padding-top: 10vh;
   padding-left: 5vw;
   padding-right: 5vw;
   width: 100vw;
   height: 100vh;
-  /* font-family: "NeueWorld-CondensedRegular"; */
   font-family: "Syne";
-  /* font-weight: 800; */
-  /* font-family: "Gloubiv_0.2-Black"; */
-  font-size: 2vw;
-  line-height: 2vw;
+  font-size: 1.6vw;
+  line-height: 1.6vw;
   /* color: rgb(255,255,255); */
-  text-align: center;
+
+}
+
+.ch-wide {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: 45vw;
+  height: 15vh;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .ch {
   /* padding-top: 6vh; */
   padding-left: 2vw;
   padding-right: 2vw;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
   width: 30vw;
-  height: auto;
+  height: 25vh;
   float: left;
+  text-align: center;
+
+}
+
+.ch-short {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  width: 30vw;
+  height: 15vh;
+  float: left;
+  text-align: center;
+
 }
 
 .title {
@@ -749,20 +772,12 @@ h5 {}
   text-transform: uppercase;
   font-size: 1vw;
   line-height: 1.6vw;
-  color: white;
+  color: rgb(255, 0, 255);
 }
 
 .footnote:hover {
-  color: rgb(255, 0, 255);
-}
 
-.footnote_spot {
-  display: inline;
-  font-size: 2vw;
-  color: rgb(255, 0, 255);
 }
-
-.footnote_spot:hover {}
 
 /* <p style="display:inline;color:rgb(255,0,255);"> */
 .bodytxt {
