@@ -70,7 +70,7 @@ a::after {}
 
   /* Modal Content/Box */
   .modal-content {
-    background-color: whitesmoke;
+    background-color: Gainsboro;
     margin: 10% auto; /* 15% from the top and centered */
     padding-top: 3vh;
     padding-bottom: 2vh;
@@ -85,7 +85,7 @@ a::after {}
   /* The Close Button */
   .close {
     /* color: #aaa; */
-    color: rgb(255,0,255);
+    color: #FA8072;
     float: right;
     /* font-size: 28px; */
     font-size: 5vw;
@@ -479,7 +479,7 @@ h4 {
 
   /* Modal Content/Box */
   .modal-content {
-    background-color: whitesmoke;
+    background-color: Gainsboro;
     margin: 10% auto; /* 15% from the top and centered */
     padding-top: 7vh;
     padding-bottom: 3vh;
@@ -494,7 +494,7 @@ h4 {
   /* The Close Button */
   .close {
     /* color: #aaa; */
-    color: rgb(255,0,255);
+    color: #FA8072;
     float: right;
     /* font-size: 28px; */
     font-size: 1.5vw;
