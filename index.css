@@ -122,7 +122,8 @@ a::after {}
 }
 
   #myBtn {
-    color: rgb(255,0,255);
+    /* color: rgb(255,0,255); */
+    color:#FA8072;
     z-index: 1;
     top: 86vh;
     left: 80vw;
@@ -213,7 +214,8 @@ a::after {}
     word-wrap: break-word;
     font-size: 15vw;
     line-height: 16vw;
-    color: rgb(255, 0, 255);
+    color:#FA8072;
+    /* color: rgb(255, 0, 255); */
     /* background-color: black; */
     transition: 0.3s ease;
     /* ANIMATION: fade is the name, 7 = duration, ease is style, 2s is delay, normal is direction, forwards is fill mode*/
@@ -241,7 +243,7 @@ a::after {}
   background: black;
   text-align: center;
   /* font-family: "Royal New Light"; */
-  font-family: "Syne Tactile";
+  font-family: "Royal New";
   font-style: normal;
   color: white;
   font-size: 5vw;
@@ -269,6 +271,10 @@ a::after {}
   padding-bottom: 1vh;
 }
 
+.to-toc:hover {
+  background: #FA8072;
+}
+
 .toc {
   /* margin-top: 25vh; */
   /* margin-left:4vw; */
@@ -276,7 +282,7 @@ a::after {}
   padding-top: 3vh;
   padding-bottom: 3vh;
   /* background-color: black; */
-  background-color: whitesmoke;
+  background-color: #FA8072;
   /* padding-top: 15vh; */
   /* padding-left: 5vw;
   padding-right: 5vw; */
@@ -293,47 +299,68 @@ a::after {}
 }
 
 .ch {
-  /* margin-top: 25vh; */
-  /* margin-left:4vw; */
-  /* margin-right:4vw; */
-  /* background-color: black; */
-  /* background-color: pink; */
   padding-top: 3vh;
   padding-left: 5vw;
   padding-right: 5vw;
   padding-bottom: 3vh;
   width: 100vw;
   height: auto;
-  /* font-family: "NeueWorld-CondensedRegular"; */
-  /* font-family: "Syne"; */
-  /* font-weight: 800; */
-  /* font-family: "Gloubiv_0.2-Black"; */
-  /* font-size: 6vw;
-  line-height: 6vw; */
-  /* color: rgb(255,255,255); */
-  /* text-align: center; */
 }
 
-/* .title {
-  font-family: "NeueWorld-CondensedRegular";
-  font-size: 12vw;
-  line-height: 12vw;
+.ch-wide {
+  padding-top: 3vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 3vh;
+  width: 100vw;
   height: auto;
-  width: 100%;
-  color: black;
-  text-align: center;
+}
+
+.ch-short {
+  padding-top: 3vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 3vh;
+  width: 100vw;
+  height: auto;
+}
+
+/* .ch-wide {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: 45vw;
+  height: 15vh;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 } */
+
+/* .ch-short {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  width: 30vw;
+  height: 15vh;
+  float: left;
+  text-align: center;
+
+} */
+
 h1 {
-  font-family: "Syne";
+  font-family: "Royal New";
   /* font-variation-settings: 'wght' 600; */
   /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
-  font-weight: 800;
-  font-size: 7vw;
-  line-height: 7vw;
+  font-weight: bold;
+  font-size: 9vw;
+  line-height: 10vw;
   height: auto;
   width: 100%;
   color: black;
-  justify-content: left;
+  /* justify-content: left; */
+  text-align: center;
 }
 
 h2 {
@@ -342,7 +369,7 @@ h2 {
   /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
   font-weight: 600;
   font-size: 6vw;
-  line-height: 8vw;
+  line-height: 7.5vw;
   height: auto;
   width: 100%;
   color: black;
@@ -350,13 +377,23 @@ h2 {
 }
 
 h3 {
-  font-family: "Syne Tactile";
+  font-family: "Royal New";
   /* font-family: "Royal New Light"; */
   /* font-style: italic; */
   font-weight: normal;
-  font-size: 4.5vw;
+  font-size: 4.3vw;
   line-height: 7vw;
   padding-left: 10vw;
+}
+
+h4 {
+  /* padding-left: 4vw; */
+  font-family: "Syne";
+  font-weight: normal;
+  /* text-transform: uppercase; */
+  font-size: 3.5vw;
+  line-height: 4vw;
+  color: black;
 }
 
 .postimg {
@@ -365,21 +402,32 @@ h3 {
 
 .footnote {
   padding-left: 25vw;
-  font-family: "Syne Tactile";
+  font-family: "Syne";
   font-weight: normal;
   text-transform: uppercase;
   font-size: 3.5vw;
   line-height: 4vw;
-  color: rgb(255, 0, 255);
+  color: #FA8072;
 }
 
 .footnote:hover {
 
 }
 
+.caption {
+  padding-left: 25vw;
+  font-family: "Syne";
+  font-weight: normal;
+  /* text-transform: uppercase; */
+  font-size: 3.5vw;
+  line-height: 4vw;
+  color: black;
+}
+
 .bodytxt-wrap {
   width: 100vw;
   height: auto;
+  background-color: whitesmoke;
   /* mix-blend-mode: lighten; */
   /* filter:difference; */
 }
@@ -458,6 +506,7 @@ h3 {
     left: 0vw; */
   }
 
+
   .close:hover,
   .close:focus {
     color: black;
@@ -483,7 +532,8 @@ h3 {
 }
 
   #myBtn {
-    color: rgb(255,0,255);
+    /* color: rgb(255,0,255); */
+    color:#FA8072;
     z-index: 1;
     top: 86vh;
     left: 90vw;
@@ -552,7 +602,8 @@ h3 {
     word-wrap: break-word;
     font-size: 15vw;
     line-height: 16vw;
-    color: rgb(255, 0, 255);
+    color:#F08080;
+    /* color: rgb(255, 0, 255); */
     /* background-color: black; */
     transition: 0.3s ease;
     /* ANIMATION: fade is the name, 7 = duration, ease is style, 2s is delay, normal is direction, forwards is fill mode*/
@@ -613,7 +664,8 @@ h3 {
   word-wrap: break-word;
   font-size: 7vw;
   line-height: 7vw;
-  color: rgb(255, 0, 255);
+  color:#FA8072;
+  /* color: rgb(255, 0, 255); */
   /* background-color: black; */
   transition: 0.3s ease;
   animation: shrink 7s ease 2s 1 normal forwards;
@@ -638,7 +690,7 @@ h3 {
   padding-bottom: 10vh;
   background: black;
   text-align: center;
-  font-family: "Syne Tactile";
+  font-family: "Royal New";
   font-style: normal;
   color: white;
   font-size: 2vw;
@@ -666,9 +718,13 @@ h3 {
   padding-bottom: 1vh;
 }
 
+.to-toc:hover {
+  background: #FA8072;
+}
+
 .toc {
 
-  background-color: whitesmoke;
+  background-color:  #FA8072;
   padding-top: 10vh;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -729,12 +785,12 @@ h3 {
 }
 
 h1 {
-  font-family: "Syne";
+  font-family: "Royal New";
   /* font-variation-settings: 'wght' 600; */
   /* ---- SYNE VARIABLE WEIGHT BETWEEN 400 - 800 ---- */
-  font-weight: 800;
-  font-size: 2.5vw;
-  line-height: 3vw;
+  font-weight: bold;
+  font-size: 4vw;
+  line-height: 6vw;
   height: auto;
   width: 100%;
   color: black;
@@ -755,28 +811,47 @@ h2 {
 }
 
 h3 {
-  font-family: "Syne Tactile";
+  /* font-family: "Syne"; */
+  font-family: "Royal New";
   /* font-style: italic; */
   font-weight: normal;
-  font-size: 1.8vw;
+  font-size: 1.4vw;
   line-height: 2.2vw;
   padding-left: 10vw;
+}
+
+h4 {
+  /* padding-left: 4vw; */
+  font-family: "Syne";
+  font-weight: normal;
+  /* text-transform: uppercase; */
+  font-size: 1.2vw;
+  line-height: 1.6vw;
+  color: black;
 }
 
 h5 {}
 
 .footnote {
   padding-left: 25vw;
-  font-family: "Syne Tactile";
+  font-family: "Syne";
   font-weight: normal;
   text-transform: uppercase;
   font-size: 1vw;
   line-height: 1.6vw;
-  color: rgb(255, 0, 255);
+  color: #FA8072;
 }
 
 .footnote:hover {
 
+}
+
+.bodytxt-wrap {
+  width: 100vw;
+  height: auto;
+  background-color: whitesmoke;
+  /* mix-blend-mode: lighten; */
+  /* filter:difference; */
 }
 
 /* <p style="display:inline;color:rgb(255,0,255);"> */
@@ -792,6 +867,10 @@ h5 {}
   font-size: 1.6vw;
   line-height: 2vw;
   color: black;
+}
+
+.postimg {
+  border-radius: 5%;
 }
 
 #questions {
@@ -820,4 +899,23 @@ h5 {}
   width: 100vw;
   height: auto;
 }
+
+#chapter2 {
+  padding-top: 20vh;
+  padding-bottom: 16vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  width: 100vw;
+  height: auto;
+}
+
+#chapter3 {
+  padding-top: 20vh;
+  padding-bottom: 16vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  width: 100vw;
+  height: auto;
+}
+
 }
